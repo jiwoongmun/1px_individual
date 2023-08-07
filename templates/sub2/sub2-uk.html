@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로맨틱홀리데이</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sub2-uk_styles.css') }}">
+</head>
+<body>
+    <div class="main">
+    <img draggable="false" src="{{ url_for('static', filename='images/main 1 uk.svg') }}">
+    <img draggable="false" class = "info" src="{{ url_for('static', filename='images/uk pic.svg') }}">
+    </div>
+    <div class="back_main"><img class="back_img" draggable="false" src="{{ url_for('static', filename='images/main 1 uk.svg') }}"></div>
+    <div class="drag living">
+        <img draggable="false" src="{{ url_for('static', filename='images/living room uk.svg') }}">
+    </div>
+    <div class="drag fireplace">
+        <img draggable="false" src="{{ url_for('static', filename='images/fireplace uk.svg') }}">
+    </div>
+    <div class="drag bedroom">
+        <img draggable="false" src="{{ url_for('static', filename='images/bedroom_uk.svg') }}">
+    </div>
+    <div class="drag text">
+        <img draggable="false" src="{{ url_for('static', filename='images/text 1.svg') }}">
+        <a href="{{url_for('archive')}}">
+            <div class="button hide">
+                <p>Click</p>
+            </div>
+        </a>
+    </div>
+    <script src="{{ url_for('static', filename='js/sub2_index.js') }}" charset="utf-8"></script>
+</body>
+</html>

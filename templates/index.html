@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로맨틱홀리데이</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="main">
+    <img src="{{ url_for('static', filename='images/Layer_1 (1).svg') }}">
+    </div>
+    <div class="clickMe left hide">
+        <a href="{{ url_for('main_uk') }}"><div class="background"></div></a>
+        <p>See more</p>
+    </div>
+    <div class="clickMe right hide">
+        <a href="{{ url_for('main_us') }}"><div class="background"></div></a>
+        <p>See more</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}" charset="utf-8"></script>
+</body>
+</html>

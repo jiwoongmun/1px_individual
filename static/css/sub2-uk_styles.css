@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    background-color: #E2E2E2;
+    display: flex;
+    width: 33.17vw;
+    height: 78.05vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 21px;
+    border: 0.5px solid black;
+    z-index: 5;
+   box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.main_pic{
+    border-radius: 21px;
+}
+.info {
+    position: absolute;
+    top: 11.29vh;
+    width: 27.47vw;
+    height: 60.08vh; 
+}
+.back_main {
+    position:absolute;
+    background-color: #E2E2E2;
+    width: 33.17vw;
+    height: 78.05vh;
+    left: 35.67vw;
+    top: 13.88vh;
+    z-index: -1;
+    border-radius: 21px;
+    border: 0.5px solid black;
+    z-index: 2;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.living {
+    width: 14.58vw;
+    height: 18.7vh;
+    background-color: #E2E2E2;
+    border-radius: 21px;
+    border: 0.5px solid black;
+    position:absolute;
+    left: 71.87vw;
+    top: 18.61vh;
+    z-index: 10;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.fireplace {
+    background-color: #E2E2E2;
+    border-radius: 21px;
+    border: 0.5px solid black;
+    position:absolute;
+    width: 21.09vw;
+    height: 27.03vh;
+    top: 30.18vh;
+    left: 58.07vw;
+    z-index: 7;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.text {
+    background-color: #E2E2E2;
+    border-radius: 21px;
+    border: 0.5px solid black;
+    position:absolute;
+    width: 23.9vw;
+    height: 37.4vh;
+    top: 46.57vh;
+    left: 17.03vw;
+    z-index: 10;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.bedroom{
+    position:absolute;
+    width: 23.38vw;
+    height: 35.64vh;
+    top: 5.27vh;
+    left: 21.45vw;
+    z-index: 0;
+}
+.button {
+    position: absolute;
+    width: 21.56vw;
+   height: 30.18vh;
+   background-color: black;
+   top: 4.62vh;
+   left: 1.24vw;
+   opacity: 50%;
+}
+p {
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 13.33vh;
+    left: 8.64vw;
+    opacity: 100%;
+
+}
+.hide {
+    opacity: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

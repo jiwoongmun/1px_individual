@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로맨틱 홀리데이</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sub3_styles.css') }}">
+</head>
+<body>
+    <a href="javascript:history.back()"><img class="back" src="{{ url_for('static', filename='images/back.svg') }}"></a>
+    <div class="back_left"></div>
+    <div class="back_main">
+        <div class="container">
+            <img class="tab" src="{{ url_for('static', filename='images/tabs_canvas.svg') }}">
+            <img id="scroll" src="{{ url_for('static', filename='images/scroll_canvas.svg') }}">
+            <div class="drawing-board">
+                <img class="placeholder placeholder1" src="{{ url_for('static', filename='images/placeholder1_canvas.svg') }}">
+                <img class="placeholder placeholder2" src="{{ url_for('static', filename='images/placeholder2_canvas.svg') }}">
+                <canvas id="drawing-board">
+                </canvas>
+                <button id="cancel"> <img src="{{ url_for('static', filename='images/cancel_canvas.svg') }}"> </button>
+                <button id="save"> <img src="{{ url_for('static', filename='images/save_canvas.svg') }}"> </button>
+            </div>
+        </div>
+        <div class="display">
+            {% for image in images %}
+            <img class="image" src="{{image.image}}">
+            {% endfor %}
+        </div>
+    </div>
+    <div class="back_right"></div>
+
+    <!-- jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <!-- my js script -->
+    <script src="{{ url_for('static', filename='js/sub3.js') }}" charset="utf-8"></script>
+</body>
+</html>

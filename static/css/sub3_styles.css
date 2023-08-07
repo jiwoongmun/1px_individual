@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+.back {
+    position: fixed;
+    width: 5.52vw;
+    height: 2.68vh;
+    top: 11.85vh;
+    left: 5.1vw;
+    z-index: 10;
+}
+.back_left {
+    position: absolute;
+    width: 20.62vw;
+    height: 100vh;
+    background-color: #EAEAEA;
+    left: 0vw;
+    z-index: 0;
+}
+.back_right {
+    position: absolute;
+    width: 20.62vw;
+    height: 100vh;
+    background-color: #EAEAEA;
+    left: 79.38vw;
+    z-index: 0;
+}
+.back_main {
+    /* 58.75 */
+    width: 58.76vw;
+    height: 100vh;;
+}
+
+.container {
+    display: flex;
+    width: 44.21vw;
+    height: 37.5vh;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 21px;
+    border: 0.5px solid #282828;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+    background-color: #e2e2e2;
+    position: absolute;
+    top:4.21vh;
+    left: 27.91vw;
+    margin: 0;
+}
+.tab {
+    position: absolute;
+    width: 41.29vw;
+    height: 1.75vh;
+    flex-shrink: 0;
+    top: 1.66vh;
+    left: 1.79vw;
+}
+#scroll {
+    width: 0.33vw;
+    height: 8.12vh;
+    flex-shrink: 0;
+    position: absolute;
+    left: 42.44vw;
+    top: 8.98vh;
+    z-index: 5;
+}
+.drawing-board {
+    width: 41.71vw;
+    height: 29.9vh;
+    background-color: #fff;
+    position: absolute;
+    left: 1.25vw;
+    top: 5.18vh;
+}
+#cancel {
+    position: absolute;
+    top : 25.55vh;
+    left: 1.04vw;
+}
+#save{
+    position: absolute;
+    top : 25.55vh;
+    left: 35.41vw;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+canvas {
+    width: 41.71vw;
+    height: 29.9vh;
+}
+
+.placeholder2 {
+    position: absolute;
+    top: 1.94vh;
+    left: 7.96vw;
+}
+.placeholder1 {
+    position: absolute;
+    top:8.24vh;
+    left: 15.36vw;
+}
+.hide {
+    z-index: -2;
+}
+.display {
+    position: absolute;
+    top: 52.77vh;
+    display: grid;
+    width:58.75vw;
+    height : 18.51vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around
+}
+.image {
+    height: 16.66vh;
+    width: 18.22vw;
+}

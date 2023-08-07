@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    background-color: #E2E2E2;
+    display: flex;
+    width: 33.17vw;
+    height: 78.05vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 21px;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.main img {
+    width: 33.17vw;
+    height: 78.05vh;
+}
+.clickMe {
+    position:absolute;
+    width: 11.14vw;
+    height: 11.85vh;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background {
+    position:absolute;
+    width: 11.14vw;
+    height: 11.85vh;
+    background-color: black;
+    opacity: 50%;
+}
+.clickMe p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    z-index: 2;
+}
+a {
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+}
+.left {
+    top: 49.85vh;
+    left: 37.69vw;
+}
+
+.right{
+    left: 51.835vw;
+    top: 49.85vh;
+}
+.hide {
+    opacity: 0;
+}
