@@ -44,13 +44,17 @@ height: 648.92px; */
     width: 23.43vw;
     height: 25.09vh; 
     z-index : 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .background {
-    position:absolute;
+    /* position:absolute; */
     background-color: black;
     opacity: 50%;
-    width: 100%;
-    height: 100%; 
+    width: 23.43vw;
+    height: 25.09vh; 
+    z-index: 1;
 }
 p {
     position: absolute;
@@ -61,8 +65,8 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 9.35vh;
-    left: 6.14vw;
+    /* top: 9.35vh;
+    left: 6.14vw; */
 
 }
 .hide {
