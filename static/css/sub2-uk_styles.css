@@ -101,7 +101,7 @@ p {
     line-height: normal;
     top: 13.33vh;
     left: 8.64vw;
-    opacity: 100%;
+    /* opacity: 100%; */
 
 }
 .hide {

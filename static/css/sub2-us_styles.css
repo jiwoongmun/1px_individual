@@ -98,9 +98,12 @@ body {
    top: 4.62vh;
    left: 1.25vw;
    opacity: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 p {
-    position: absolute;
+    /* position: absolute; */
     color: #FFF;
     text-align: center;
     font-family: 'Inter', sans-serif;    
@@ -108,8 +111,8 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 11.11vh;
-    left: 8.64vw;
+    /* top: 11.11vh;
+    left: 8.64vw; */
 }
 .hide {
     opacity: 0;
