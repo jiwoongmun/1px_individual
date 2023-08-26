@@ -25,7 +25,7 @@ body {
 }
 .clickMe {
     position:absolute;
-    width: 28.25%;
+    width: 29.25%;
     height: 14.48%;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ a {
 }
 .left {
     top: 47.17%;
-    left: 16.03%;
+    left: 15.03%;
 }
 
 .right{

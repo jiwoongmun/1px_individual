@@ -27,10 +27,10 @@ body {
 height: 648.92px; */
 .button {
     position: absolute;
-    top: 13.35%;
-    left: 18.35%;
-    width: 60.39%;
-    height: 35.32%;
+    top: 15.75%;
+    left: 17.35%;
+    width: 62.29%;
+    height: 30.62%;
     z-index : 10;
     display: flex;
     justify-content: center;
@@ -40,8 +40,8 @@ height: 648.92px; */
     /* position:absolute; */
     background-color: black;
     opacity: 50%;
-    width: 22.43vw;
-    height: 26.09vh; 
+    width: 100%;
+    height: 100%; 
     z-index: 1;
 }
 a {

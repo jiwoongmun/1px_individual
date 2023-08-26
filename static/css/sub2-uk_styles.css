@@ -66,7 +66,7 @@ body {
     /* border-radius: 21px; */
     /* border: 0.5px solid black; */
     position:absolute;
-    width: 23.9vw;
+    width: 24.7vw;
     height: 37.4vh;
     top: 46.57vh;
     left: 17.03vw;
@@ -99,10 +99,10 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 69.54%;
+    width: 61.54%;
     height: 67.31%;
     top: 15.87%;
-    left: 12.5%;
+    left: 11.5%;
 }
 .hide {
     opacity: 0;
