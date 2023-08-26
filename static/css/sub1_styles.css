@@ -9,8 +9,8 @@ body {
 .main {
     /* background-color: #E2E2E2; */
     display: flex;
-    width: 37.34vw;
-    height: 85.46vh;
+    width: 33.17vw;
+    height: 78.05vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,18 +20,20 @@ body {
     /* box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25); */
 }
 .main_back {
-    width: 37.34vw;
-    height: 85.46vh;
+    width: 33.17vw;
+    height: 78.05vh;
+    border-radius: 21px;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
 }
 /* width: 527.58px;
 height: 648.92px; */
 .button {
     position: absolute;
-    top: 15.03%;
-    left: 19.52%;
+    top: 14.59%;
+    left: 18.05%;
     /* width: 55.36%; */
-    width: 62.51%;
-    height: 35.67%;
+    width: 63.89%;
+    height: 32.02%;
     /* height: 29.14%;  */
     z-index : 10;
     display: flex;

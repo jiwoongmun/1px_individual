@@ -83,7 +83,7 @@ body {
     height: 35.92vh;
     position:absolute;
     top: 4.44vh;
-    left: 55vw;
+    left: 58.64vw;
     z-index: 0;
 
 }
@@ -127,6 +127,6 @@ img{
     font-weight: 600;
     line-height: normal;
     position: fixed;
-    top: 3.51vh;
-    left: 40.83vw;
+    top: 2vh;
+    left: 42%;
 }

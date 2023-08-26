@@ -78,7 +78,7 @@ body {
     width: 23.38vw;
     height: 35.64vh;
     top: 5.27vh;
-    left: 21.45vw;
+    left: 18.84vw;
     z-index: 0;
 }
 .black {
@@ -119,6 +119,6 @@ img {
     font-weight: 600;
     line-height: normal;
     position: fixed;
-    top: 3vh;
-    left: 54.57vw;
+    top: 2vh;
+    left: 42%;
 }
