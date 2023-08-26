@@ -27,10 +27,12 @@ body {
 height: 648.92px; */
 .button {
     position: absolute;
-    top: 16.03%;
+    top: 15.03%;
     left: 19.52%;
-    width: 55.36%;
-    height: 29.14%; 
+    /* width: 55.36%; */
+    width: 62.51%;
+    height: 35.67%;
+    /* height: 29.14%;  */
     z-index : 10;
     display: flex;
     justify-content: center;
