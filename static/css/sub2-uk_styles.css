@@ -120,12 +120,12 @@ img {
     line-height: normal;
     position: fixed;
     top: 2vh;
-    left: 42%;
+    left: 44.7%;
 }
 #text_description {
     position: absolute;
-    bottom: -5%;
-    left: 40%;
+    bottom: -3%;
+    left: 36%;
     color: #000;
     font-family: Inter;
     font-size: 1rem;
