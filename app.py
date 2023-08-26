@@ -49,8 +49,11 @@ def us_details():
 
 @app.route('/archive', methods=['GET', 'POST'])
 def archive():
+    time.sleep(2)
+
     data = request.form.get('image')
-    images = None
+    time.sleep(2)
+
     if (data):
         new_item = image_table(data)
         db.session.add(new_item)
@@ -58,13 +61,12 @@ def archive():
         images = image_table.query.order_by(image_table.id.desc()).all()
         
     else: 
-        time.sleep(2)
         data = request.form.get('image')
         if (data):
             new_item = image_table(data)
             db.session.add(new_item)
             db.session.commit()
-        images = image_table.query.order_by(image_table.id.desc()).all()
+            images = image_table.query.order_by(image_table.id.desc()).all()
     return render_template('sub3/sub3.html', images=images)
 
 if __name__ == "__main__":
