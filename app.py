@@ -49,6 +49,7 @@ def us_details():
 
 @app.route('/archive', methods=['GET', 'POST'])
 def archive():
+    time.sleep(2)
     data = request.form.get('image')
     print(data)
     if (data):
@@ -57,7 +58,6 @@ def archive():
         db.session.commit()
     else: 
         time.sleep(2)
-        data = request.form.get('image')
         if (data):
             new_item = image_table(data)
             db.session.add(new_item)
