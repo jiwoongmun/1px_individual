@@ -74,7 +74,7 @@ save.addEventListener('click', (e) => {
     fetch('/archive', {
         method: 'POST',
         body: formData
-    }).then(window.location.reload()
+    }).then( location.href("{{(url_for('archive'))}}")
     );
         // 페이지 reload해서 보여줘야해
     })
