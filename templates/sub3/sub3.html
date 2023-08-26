@@ -113,7 +113,7 @@
             fetch('/archive', {
                 method: 'POST',
                 body: formData
-            }).then(location.replace("/archive")
+            }).then(setTimeout(function() {location.replace("/archive")}, 2000) 
             );
             // 페이지 reload해서 보여줘야해
         })
