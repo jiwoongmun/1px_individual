@@ -74,8 +74,8 @@ save.addEventListener('click', (e) => {
     fetch('/archive', {
         method: 'POST',
         body: formData
-    });
+    }).then(window.location.reload()
+    );
         // 페이지 reload해서 보여줘야해
-    window.location.reload();
     })
 
