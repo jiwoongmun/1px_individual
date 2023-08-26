@@ -49,7 +49,6 @@ def us_details():
 
 @app.route('/archive', methods=['GET', 'POST'])
 def archive():
-    time.sleep(2)
     data = request.form.get('image')
     print(data)
     if (data):
