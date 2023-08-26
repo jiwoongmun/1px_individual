@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, url_for, redirect, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import time
 
 #############################
 ######initial set up ########
@@ -53,6 +54,13 @@ def archive():
         new_item = image_table(data)
         db.session.add(new_item)
         db.session.commit()
+    else: 
+        time.sleep(5)
+        data = request.form.get('image')
+        if (data):
+            new_item = image_table(data)
+            db.session.add(new_item)
+            db.session.commit()
     images = image_table.query.order_by(image_table.id.desc()).all()
     return render_template('sub3/sub3.html', images=images)
 

@@ -122,11 +122,22 @@ img{
 .move_text{
     color: #000;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     position: fixed;
     top: 2vh;
     left: 47%;
+}
+#text_description {
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

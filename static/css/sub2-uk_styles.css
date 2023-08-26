@@ -122,3 +122,14 @@ img {
     top: 2vh;
     left: 42%;
 }
+#text_description {
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
