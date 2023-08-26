@@ -25,8 +25,8 @@ body {
 }
 .clickMe {
     position:absolute;
-    width: 33.75%;
-    height: 15.18%;
+    width: 28.25%;
+    height: 14.48%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,13 +63,13 @@ a {
     align-items: center;
 }
 .left {
-    top: 48.87%;
-    left: 11.93%;
+    top: 45.17%;
+    left: 16.03%;
 }
 
 .right{
-    top: 48.87%;
-    left: 54.63%;
+    top: 47.17%;
+    left: 52.09%;
 }
 .hide {
     opacity: 0;
