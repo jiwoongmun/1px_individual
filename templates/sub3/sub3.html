@@ -106,7 +106,6 @@
             })
         }
 
-
         save.addEventListener('click', (e) => {
             var url = canvas.toDataURL();
             var formData = new FormData();
@@ -114,7 +113,7 @@
             fetch('/archive', {
                 method: 'POST',
                 body: formData
-            }).then(window.open("{{(url_for('archive'))}}")
+            }).then(location.replace("/archive")
             );
             // 페이지 reload해서 보여줘야해
         })

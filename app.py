@@ -55,7 +55,7 @@ def archive():
         db.session.add(new_item)
         db.session.commit()
     else: 
-        time.sleep(3)
+        time.sleep(2)
         data = request.form.get('image')
         if (data):
             new_item = image_table(data)
