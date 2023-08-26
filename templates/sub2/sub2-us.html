@@ -9,7 +9,7 @@
 <body>
     <div class="main">
         <img class="main_pic" draggable="false" src="{{ url_for('static', filename='images/main 1  us.svg') }}">
-        <img draggable="false" class = "info" src="{{ url_for('static', filename='images/usMain.png') }}">
+        <!-- <img draggable="false" class = "info" src="{{ url_for('static', filename='images/usMain.png') }}"> -->
     </div>
     <div  class="back_main"><img class="back_img" draggable="false" src="{{ url_for('static', filename='images/main 1 uk.svg') }}"></div>
     <div class="drag sofa">
@@ -23,7 +23,11 @@
     </div>
     <div class="drag text">
         <img draggable="false" src="{{ url_for('static', filename='images/text 1.svg') }}">
-        <a href="{{url_for('archive')}}"><div class="button hide"><p>Click</p></div></a>
+        <a class="button hide" href="{{url_for('archive')}}">
+            <div class="black">
+            </div>
+            <img id="click" draggable="false" src="{{ url_for('static', filename='images/Click.svg') }}">
+        </a>
     </div>
     <p class="move_text">창들을 드래그해서 옮겨보세요</p>
     <script src="{{ url_for('static', filename='js/sub2_index.js') }}" charset="utf-8"></script>
