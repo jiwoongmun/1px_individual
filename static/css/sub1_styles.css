@@ -9,8 +9,8 @@ body {
 .main {
     /* background-color: #E2E2E2; */
     display: flex;
-    width: 33.17vw;
-    height: 78.05vh;
+    width: 37.34vw;
+    height: 85.46vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,10 +20,8 @@ body {
     /* box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25); */
 }
 .main_back {
-    width: 33.17vw;
-    height: 78.05vh;
-    border-radius: 21px;
-    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.25);
+    width: 37.34vw;
+    height: 85.46vh;
 }
 /* width: 527.58px;
 height: 648.92px; */

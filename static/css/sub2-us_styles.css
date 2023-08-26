@@ -83,7 +83,7 @@ body {
     height: 35.92vh;
     position:absolute;
     top: 4.44vh;
-    left: 58.64vw;
+    left: 5.64vw;
     z-index: 0;
 
 }
@@ -106,10 +106,10 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 75.54%;
-    height: 67.01%;
+    width: 69.54%;
+    height: 67.31%;
     top: 15.87%;
-    left: 9.3%;
+    left: 12.5%;
 }
 
 .hide {
