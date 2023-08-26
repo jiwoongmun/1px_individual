@@ -36,6 +36,8 @@
     <!-- jquery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
     <!-- my js script -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
     <script>
         const canvas = document.getElementById('drawing-board');
         const cancel = document.getElementById('cancel');
@@ -107,14 +109,26 @@
         }
 
         save.addEventListener('click', (e) => {
-            var url = canvas.toDataURL();
-            var formData = new FormData();
-            formData.append('image', url);
-            fetch('/archive', {
-                method: 'POST',
-                body: formData
-            }).then(location.replace("/archive")
-            );
+            var url = canvas.toDataURL(); // This is the original dataURI
+
+            $.ajax({
+                url: "db_save",
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                keyword: url
+                }),
+                success: function (result) {
+                    console.log("yes")
+                    location.reload();
+                    location.replace("/archive") }
+                       })
+            // fetch('/archive', {
+            //     method: 'POST',
+            //     body: formData
+            // }).then(location.replace("/archive")
+            // );
             // 페이지 reload해서 보여줘야해
         })
 

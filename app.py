@@ -3,6 +3,8 @@ from flask import Flask, render_template, url_for, redirect, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import time
+import json
+
 
 #############################
 ######initial set up ########
@@ -47,26 +49,34 @@ def uk_details():
 def us_details():
     return render_template('sub2/sub2-us.html')
 
+@app.route("/db_save", methods=['GET', 'POST'])
+def db_save():
+    param = json.loads(request.data)
+    print(param)
+    # base64_data = param['keyword'].split(':')[1]  # Remove the "data:image/png;base64," prefix
+    base64_data = param['keyword']
+    print(base64_data)
+    new_item = image_table(base64_data)
+    db.session.add(new_item)
+    db.session.commit()
+    return json.dumps(base64_data,ensure_ascii=False)
+
 @app.route('/archive', methods=['GET', 'POST'])
 def archive():
-    time.sleep(2)
 
-    data = request.form.get('image')
-    time.sleep(2)
-
-    if (data):
-        new_item = image_table(data)
-        db.session.add(new_item)
-        db.session.commit()
-        images = image_table.query.order_by(image_table.id.desc()).all()
+    # if (data):
+        # new_item = image_table(data)
+        # db.session.add(new_item)
+        # db.session.commit()
+    #     images = image_table.query.order_by(image_table.id.desc()).all()
         
-    else: 
-        data = request.form.get('image')
-        if (data):
-            new_item = image_table(data)
-            db.session.add(new_item)
-            db.session.commit()
-            images = image_table.query.order_by(image_table.id.desc()).all()
+    # else: 
+    #     data = request.form.get('image')
+    #     if (data):
+    #         new_item = image_table(data)
+    #         db.session.add(new_item)
+    #         db.session.commit()
+    images = image_table.query.order_by(image_table.id.desc()).all()
     return render_template('sub3/sub3.html', images=images)
 
 if __name__ == "__main__":
